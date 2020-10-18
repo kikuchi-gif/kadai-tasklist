@@ -1,10 +1,8 @@
 Rails.application.routes.draw do
+
   root to: 'toppages#index'
-  get 'toppages/index'
-  get 'sessions/new'
-  get 'sessions/create'
-  get 'sessions/destroy'
+  
+ get 'signup', to: 'users#new'
+  resources :users, only: [:index, :show, :new, :create]
 
-
-  resources :tasks
 end
