@@ -13,6 +13,6 @@
     <ul class="nav nav-tabs nav-justified mb-3">
       <li class="nav-item"><a href="<%= user_path(@user) %>" class="nav-link <%= 'active' if current_page?(user_path(@user)) %>">Microposts  <span class="badge badge-secondary"><%= @count_tasklists %></span></a></li>
     </ul>
-    <%= render 'tasklists/tasklists', tasklists: @tasklists %>
+    <%= render 'tasks/tasks', tasklists: @tasklists %>
   </div>
 </div>
